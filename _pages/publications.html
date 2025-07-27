@@ -11,26 +11,19 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+## Top 5 Publications
 
+1.  **[Preprint]** Jaganath, Devan, et al. "Accelerating cough-based algorithms for pulmonary tuberculosis screening: Results from the CODA TB DREAM Challenge." *medRxiv* (2024): 2024-05.
+2.  **[Poster]** Ahuja, G., et al. Leveraging Language Models and a Common Data Model to Unlock Real-World Evidence from Unstructured Electronic Health Record Data in India. *Research Highlights for awardees of GKII-Ashoka Breakthrough Grant 2024*.
+3.  **[Poster/Abstract]** Jain, H., Sivasami, K., Kutum, R., Ahuja, G., et al. "POS0721 Interpretation Of Anti-Nuclear Antibody Indirect Immunofluorescence Patterns Using AI." *Annals of the Rheumatic Diseases* 84 (2025): 892.
+4.  **[Proceedings]** Kaur, B., Ahuja, G., et al. Discovering patient subtypes using hypergraph over interoperable EHR data in India. *21st Academy Of Discrete Mathematics And Its Applications (ADMA) 2025*.
+5.  **[In-progress]** Antill, A., Ahuja, G., et al. Assessing the Reliability of Large Language Model-Driven Agentic Workflows for Single Cell RNA-Sequencing Annotations. 2025
 
+## All Publications
 
+1.  **[Preprint]** Jaganath, Devan, et al. "Accelerating cough-based algorithms for pulmonary tuberculosis screening: Results from the CODA TB DREAM Challenge." *medRxiv* (2024): 2024-05.
+2.  **[Poster]** Ahuja, G., et al. Leveraging Language Models and a Common Data Model to Unlock Real-World Evidence from Unstructured Electronic Health Record Data in India. *Research Highlights for awardees of GKII-Ashoka Breakthrough Grant 2024*.
+3.  **[Poster/Abstract]** Jain, H., Sivasami, K., Kutum, R., Ahuja, G., et al. "POS0721 Interpretation Of Anti-Nuclear Antibody Indirect Immunofluorescence Patterns Using AI." *Annals of the Rheumatic Diseases* 84 (2025): 892.
+4.  **[Proceedings]** Kaur, B., Ahuja, G., et al. Discovering patient subtypes using hypergraph over interoperable EHR data in India. *21st Academy Of Discrete Mathematics And Its Applications (ADMA) 2025*.
+5.  **[In-progress]** Antill, A., Ahuja, G., et al. Assessing the Reliability of Large Language Model-Driven Agentic Workflows for Single Cell RNA-Sequencing Annotations. 2025
+6.  **[In-progress]** Ahuja, G.. Agent-based Conversational Augmented Intelligence System for Probable Abdominal Pain Diagnosis in Outpatient Setting. *DipASR Thesis*. 2025
